@@ -9,12 +9,12 @@ Pour l'utiliser :
 - Installer Docker ;
 - Construire l'image (le téléchargement peut prendre du temps) :
 ```
-docker build -t coursr https://github.com/EricMarcon/Docker-CoursR.git#master:docker
+docker build -t cours-r https://github.com/EricMarcon/Docker-Cours-R.git#master
 ````
 
 - Exécuter l'image. Le mot de passe est à choisir librement, pour se connecter à RStudio (le nom d'utilisateur est obligatoirement "rstudio")
 ```
-docker run -e PASSWORD=<votre_mdp> -p 8787:8787  coursr
+docker run -e PASSWORD=<votre_mdp> -p 8787:8787  cours-r
 ````
 
 Le conteneur Docker n'a par défaut pas de lien avec le système de fichier de sa machine hôte.
