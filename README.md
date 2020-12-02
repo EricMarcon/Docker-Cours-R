@@ -35,7 +35,7 @@ Le compte "rstudio" est réservé à l'enseignant qui peut installer des package
 - [Télécharger le dépôt](https://github.com/EricMarcon/Docker-Cours-R/archive/master.zip), extraire le contenu du fichier zip dans un nouveau dossier et ouvrir une console dans ce dossier ;
 - Modifier le fichier `Dockerfile` pour créer les utilisateur en modifiant la ligne modèle (<prenom.nom> est le nom de chaque utilisateur) :
 ```
-RUN useradd -rm -d /home/<prenom.nom> -s /bin/bash -p "$(openssl passwd -1 <prenom.nom>)" --no-log-init <prenom.nom>
+RUN useradd -m -d /home/<prenom.nom> -p "$(openssl passwd -1 <prenom.nom>)"  <prenom.nom>
 ```
 
 - Construire l'image
