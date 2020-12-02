@@ -39,5 +39,11 @@ InstallPackages(c("knitr",      # Tricot
 ))
 
 
-# EcoFoG
+# EcoFoG : modèles de documents pour Travailler avec R
 remotes::install_github("EcoFoG/EcoFoG", build_vignettes = TRUE)
+
+# Cours Biodiversité
+InstallPackages(c("entropart", # Mesure de la biodiversité
+                  "dbmss"	     # Structures spatiales
+))
+remotes::install_github("EricMarcon/SpatDiv", build_vignettes = TRUE)
